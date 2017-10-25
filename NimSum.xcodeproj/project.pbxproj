@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70B7F80C1F916E7F0020A56F /* NimSumCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B7F80B1F916E7F0020A56F /* NimSumCalc.swift */; };
 		70E913BB1F87BAF800973F4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E913BA1F87BAF800973F4C /* AppDelegate.swift */; };
 		70E913BD1F87BAF800973F4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E913BC1F87BAF800973F4C /* ViewController.swift */; };
 		70E913C01F87BAF800973F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E913BE1F87BAF800973F4C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70B7F80B1F916E7F0020A56F /* NimSumCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimSumCalc.swift; sourceTree = "<group>"; };
 		70E913B71F87BAF800973F4C /* NimSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E913BA1F87BAF800973F4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E913BC1F87BAF800973F4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		70E913B91F87BAF800973F4C /* NimSum */ = {
 			isa = PBXGroup;
 			children = (
+				70B7F80B1F916E7F0020A56F /* NimSumCalc.swift */,
 				70E913BA1F87BAF800973F4C /* AppDelegate.swift */,
 				70E913BC1F87BAF800973F4C /* ViewController.swift */,
 				70E913BE1F87BAF800973F4C /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E913BD1F87BAF800973F4C /* ViewController.swift in Sources */,
+				70B7F80C1F916E7F0020A56F /* NimSumCalc.swift in Sources */,
 				70E913BB1F87BAF800973F4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,8 +197,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6E6HG384J8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -250,8 +257,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6E6HG384J8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
