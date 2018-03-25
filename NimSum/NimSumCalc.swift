@@ -8,31 +8,26 @@
 
 import UIKit
 
-func nimCalc(numOfRows: Int) -> [Int: Int] {
-    var rows = [Int: Int]()
+func nimCalc(rows: [Int]) -> String {
+//    var rows = [Int: Int]()
     var nimSum: Int = 0
     
-    for i in 1...numOfRows {
-        // call ask func here
-        rows[i] = Int(arc4random_uniform(15) + 1) // and val her
-    }
+//    for i in 1...numOfRows {
+//        // call ask func here
+//        rows[i] = Int(arc4random_uniform(15) + 1) // and val her
+//    }
     
-    for rowVal in rows.values {
+    for rowVal in rows {
         nimSum = nimSum ^ rowVal
     }
     
-    for i in rows.keys {
-        if let rowVal = rows[i] {
-            if rowVal ^ nimSum < rowVal {
-                rows[i] = rowVal ^ nimSum
-                break
-            }
+    for (i, rowVal) in rows.enumerated() {
+        if rowVal ^ nimSum < rowVal {
+            return "Remove \(rowVal - (rowVal ^ nimSum)) ball(s) from row #\(i + 1)"
         }
     }
     
-    
-    
-    return rows
+    return "Skip move (or u lost xd)"
 }
 
 
